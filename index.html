@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mainContainer {
+            height: 100vh;
+            width: 100vw;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .left {
+            height: 99vh;
+            width: 30vw;
+            padding: 40px;
+            /* border: 2px solid yellow; */
+            display: flex;
+            flex-direction: column;
+            background-color: #c8e8fd45;
+        }
+
+        .right {
+            background-color: #0a59eb4a;
+            height: 99vh;
+            width: 70vw;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .LeftFiveDiv {
+            height: 20vh;
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .leftInnerDiv1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #0a59eb4a;
+        }
+
+        .leftInnerDiv2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .leftInnerDiv1 img {
+            height: 70px;
+            width: 70px;
+            /* border: 2px solid pink; */
+            border-radius: 50%;
+        }
+
+        .two {
+            display: flex;
+            width: 8vw;
+            justify-content: space-between;
+            align-items: center;
+            color: #0a59eb4a;
+            font-size: 20px;
+        }
+
+        .leftInnerDiv6 {
+            /* border: 2px solid black; */
+            height: 15vh;
+            width: 40vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .last-bottom-div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            background-color: #0a59eb4a;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            width: 80%;
+            height: 15vh;
+        }
+
+        .com {
+            width: 50%;
+            /* border: 2px solid violet; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .leftText {
+            font-size: 18px;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            /* text-align: center; */
+            /* width: 40px; */
+        }
+
+        .rightimg img {
+            height: 50px;
+            width: 80px;
+            border-radius: 10px;
+        }
+
+        .rightOne {
+            height: 80vh;
+            width: 90%;
+            /* border: 2px solid pink; */
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin: 70px;
+        }
+
+        .innerOne {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            height: 20vh;
+            padding: 20px;
+            /* width: 100vw; */
+        }
+
+        .line {
+            height: 18px;
+            width: 155px;
+            /* border: 2px solid black; */
+            background-color: #dff1fdbd;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .threeDivinLine {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            /* border:2px solid  navy; */
+            height: 50vh;
+            margin: 10px 0px;
+            background-color: #dff1fdbd;
+        }
+        .four {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33.33%;
+            /* border: 2px solid purple; */
+            height: 100%;
+        }
+
+        .four img {
+            height: 70px;
+            width: 75px;
+            border-radius: 10px;
+        }
+
+        .middle {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+        }
+        .last {
+        display: flex;
+    
+        justify-content: flex-end;
+        align-items:flex-start;
+        padding: 10px;
+        }
+        .lineBottom{
+            background-color: #0a59eb4a;
+            height: 18px;
+            width: 155px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .middle h3,h5{
+            color: #0a59eb4a;
+        }
+        .innerOne h2{
+            color: #00071475;
+            font-weight: bold;
+            font-size: 26px;
+        }
+        .last h3{
+            color: #0a59eb4a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="one left">
+            <div class="LeftFiveDiv">
+                <div class="leftInnerDiv1">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                        alt="" class="img">
+                    <h4><b>Simo Edvin</b> </h4>
+                    <h6>Pro Member</h6>
+                </div>
+            </div>
+
+
+            <div class="LeftFiveDiv">
+                <div class="leftInnerDiv2">
+                    <div class="two">
+                        <i class="fa-regular fa-message"></i>
+                        <h4>Streams</h4>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="LeftFiveDiv">
+                <div class="leftInnerDiv2">
+                    <div class="two">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h4>Games</h4>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="LeftFiveDiv">
+                <div class="leftInnerDiv2">
+                    <div class="two">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h4>New</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="LeftFiveDiv">
+                <div class="leftInnerDiv2">
+                    <div class="two">
+                        <i class="fa-solid fa-book"></i>
+                        <h4>Library</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="LeftFiveDiv">
+                <div class="leftInnerDiv6">
+                    <div class="last-bottom-div">
+                        <div class=" com leftText">Join pro for Free Games</div>
+
+                        <div class=" com rightimg">
+                            <img class="gameimg"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzr8IvvNwMV2IjYiZC23jgHZODUxoqQy1sxQ&usqp=CAU"
+                                alt="" class="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class=" one right">
+            <div class="rightOne">
+                <div class="innerOne">
+                    <h2><b> Active Games</b></h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="innerOne threeDivinLine">
+                    <div class="four"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk8gUJZdYXhBAis-w3aT4twO8vcPeZ_hNtFjueOP4Ol-1qvoSk_4NEirdAnKi7Yh63TE&usqp=CAU"
+                            alt=""></div>
+                    <div class="four middle">
+                        <h3>Assasins Creed Valhalla</h3>
+                        <h5>PS5 Version</h5>
+                        <div class="lineBottom"></div>
+                    </div>
+
+                    <div class="four last"><h3>60%</h3></div>
+                </div>
+
+
+                <div class="innerOne threeDivinLine">
+                    <div class="four"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk8gUJZdYXhBAis-w3aT4twO8vcPeZ_hNtFjueOP4Ol-1qvoSk_4NEirdAnKi7Yh63TE&usqp=CAU"
+                            alt=""></div>
+                    <div class="four middle">
+                        <h3>Assasins Creed Valhalla</h3>
+                        <h5>PS5 Version</h5>
+                        <div class="lineBottom"></div>
+                    </div>
+                    <div class="four last"><h3>60%</h3></div>
+                </div>
+
+
+                <div class="innerOne threeDivinLine">
+                    <div class="four"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdk8gUJZdYXhBAis-w3aT4twO8vcPeZ_hNtFjueOP4Ol-1qvoSk_4NEirdAnKi7Yh63TE&usqp=CAU"
+                            alt=""></div>
+                    <div class="four middle">
+                        <h3>Assasins Creed Valhalla</h3>
+                        <h5>PS5 Version</h5>
+                        <div class="lineBottom"></div>
+                    </div>
+                    <div class="four last"><h3>60%</h3></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
